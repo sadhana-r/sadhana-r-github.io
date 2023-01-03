@@ -17,16 +17,17 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+				<!-- Header -->
+					<!-- <header id="header" class="alt"> -->
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>Stellar</h1>
 						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header> -->
+						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+					<!-- </header> -->
 
 				<!-- Nav -->
 					<nav id="nav">
+						<div id="largescreen_menu">
 						<ul>
 							<li><a href="#intro" class="active">About Me</a></li>
 							<li><a href="assets/Sadhana_extendedCV_2022.pdf" target="_blank">CV</a></li>
@@ -38,8 +39,47 @@
 							<li><a href="https://github.com/sadhana-r" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							<li><a href="mailto:sadhana.ravikumar@gmail.com" target="_blank" class="icon communications fa-envelope-open alt"><span class="label">Email</span></a></li>
 							<li><a href="https://scholar.google.com/citations?user=N3etvb4AAAAJ&hl=en" target="_blank" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+						
 						</ul>
+						</div>
+						<div id="hamburger" onclick="toggleMobileMenu(this)">
+							<div class = "bar1"></div>
+							<div class = "bar2"></div>
+							<div class = "bar3"></div>
+							<ul class="mobile-menu">
+								<li><a href="#intro" class="active">About Me</a></li>
+								<li><a href="assets/Sadhana_extendedCV_2022.pdf" target="_blank">CV</a></li>
+								<li><a href="#research">Research</a></li>
+								<li><a href="#publications">Publications</a></li>
+								<li><a href="#service">Service and Community</a></li>
+								<li><a href="https://www.linkedin.com/in/sadhanar/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://twitter.com/sadhsays" target="_blank" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/sadhana-r" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:sadhana.ravikumar@gmail.com" target="_blank" class="icon communications fa-envelope-open alt"><span class="label">Email</span></a></li>
+								<li><a href="https://scholar.google.com/citations?user=N3etvb4AAAAJ&hl=en" target="_blank" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+							</ul>
+						</div>
 					</nav>
+
+
+					<!-- <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+						<div class = "bar1"></div>
+						<div class = "bar2"></div>
+						<div class = "bar3"></div>
+						<ul class="mobile-menu">
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="assets/Sadhana_extendedCV_2022.pdf" target="_blank">CV</a></li>
+							<li><a href="#research">Research</a></li>
+							<li><a href="#publications">Publications</a></li>
+							<li><a href="#service">Service and Community</a></li>
+							<li><a href="https://www.linkedin.com/in/sadhanar/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://twitter.com/sadhsays" target="_blank" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/sadhana-r" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:sadhana.ravikumar@gmail.com" target="_blank" class="icon communications fa-envelope-open alt"><span class="label">Email</span></a></li>
+							<li><a href="https://scholar.google.com/citations?user=N3etvb4AAAAJ&hl=en" target="_blank" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+						</ul>
+					</div> -->
+				
 
 				<!-- Main -->
 					<div id="main">
@@ -81,8 +121,8 @@
 
 								<div class="project">
 									<p class="researchtitle">Present</p>
-									<div class="img-left">
-										<img class="project_logo" src="images/atlas_figure.png" alt="Project thumbnail">
+									<div class="container_projectlogo">
+										<img id="project_logo" src="images/atlas_figure.png" alt="Project thumbnail">
 									</div>
 									<div class="researchprojects">
 										<p> My current research focuses on the development of image analysis techniques applied

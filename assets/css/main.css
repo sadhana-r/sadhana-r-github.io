@@ -3310,11 +3310,12 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color:#e37682 
+			background-color:#636363;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
 		}
+
 		/* rgba(247, 247, 247, 0.95); */
 			#nav.alt ul li {
 				margin: 0 0.175em;
@@ -3324,9 +3325,67 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
+		#hamburger {
+				margin: auto 0;
+				display: none;
+				cursor:pointer;
+		}
+			 
+		#hamburger div{
+				width: 35px;
+				height: 5px;
+				background-color: #dddddd;
+				margin: 6px 0;
+				transition: 0.4s;
+		}
+
+ 
+			.open .bar1 {
+				transform: translate(0, 11px) rotate(-45deg);
+				/* -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+				transform: rotate(-45deg) translate(-6px, 6px); */
+			}
+			  
+			.open .bar2 {
+				opacity: 0;
+			}
+			  
+			.open .bar3 {
+				transform: translate(0, -11px) rotate(45deg);
+				/* -webkit-transform: rotate(45deg) translate(-6px, -8px);
+				transform: rotate(45deg) translate(-6px, -8px); */
+			}
+
+			.mobile-menu {
+				display: none;
+				position: absolute;
+				top: 50px;
+				left: 0;
+				height: calc(100vh - 50px);
+				width: 100%;
+				background-color: #636363;
+				font-size: 1.5em;
+			  }
+			  
+			  .open .mobile-menu {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+			  }
+			  
+			  .mobile-menu li {
+				margin-bottom: 10px;
+			  } 
+
+		/* #For mobile device */
 		@media screen and (max-width: 736px) {
 
-			#nav {
+			#largescreen_menu {
+				display:none;
+			}
+
+			#hamburger {
 				display: block;
 			}
 
@@ -3819,27 +3878,6 @@ input, select, textarea {
 		overflow:hidden;
 	}
 
-	.researchprojects{
-
-		width:55%;
-		overflow: hidden;
-		text-align: justify;
-		float:left
-	}
-
-	.researchprojects_noimage{
-
-		width:100%;
-		overflow: hidden;
-		text-align: justify;
-		float:left
-	}
-
-	.left{
-		width:auto;
-		overflow:hidden;
-	}
-
 	.researchtitle{
 		text-align: left;
 		color:#935d8c;
@@ -3847,17 +3885,59 @@ input, select, textarea {
 		font-size: 1.5em;
 		margin-bottom: 5px;
 	}
-	
-	img.project_logo{
-		float:right;
-		width:40%;
+
+	/* .container_projectlogo{
+		width: auto;
+		float: right;
+	} */
+
+	#project_logo {
+		float: right;
+		width: 40%;
 		margin-left: 5%;
+	}
+
+	.researchprojects{
+		width: 55%;
+		overflow: hidden;
+		text-align: justify;
+		float:left;
+	}
+
+	.researchprojects_noimage{
+		width:100%;
+		overflow: hidden;
+		text-align: justify;
+		float:left
+	}
+
+	/* .left{
+		width:auto;
+		overflow:hidden;
+	} */
+
+
+	@media screen and (max-width: 736px) {
+
+		#project_logo {
+			width: 100%;
+			display: flex;
+			margin-bottom: 5%;
+			margin-top: 5%;
+		}
+	
+		.researchprojects{
+			width: 100%;
+			overflow: hidden;
+			text-align: justify;
+		}
+
 	}
 
 	/* .img_with_logo{
 		text-align: center;
 	} */
-
+/* 
 	.below{
 		text-align: center;
-	} */
+	}  */
