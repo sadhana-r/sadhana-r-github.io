@@ -3390,7 +3390,7 @@ input, select, textarea {
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 4.25em;
 				}
 
 		}
