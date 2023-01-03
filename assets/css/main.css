@@ -3327,7 +3327,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: flex;
+				display: block;
 			}
 
 				#nav + #main {
